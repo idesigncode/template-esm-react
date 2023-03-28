@@ -14,4 +14,5 @@ npm-debug.log
 
 # Build files
 /exampleFunction.mjs
+/exampleStyles.css
 /ExampleComponent.mjs

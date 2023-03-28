@@ -5,8 +5,10 @@
   "keywords": [
     "react",
     "babel",
+    "postcss",
     "eslint",
     "jest",
+    "scss",
     "prettier",
     "cleanup",
     "esm",
@@ -35,8 +37,9 @@
   "scripts": {
     "eslint": "eslint . --ext .js,.cjs,.mjs --fix --ignore-path .gitignore",
     "postprepare": "node .npm-postprepare.cjs",
-    "prepare": "npm run prepare:clean && npm run prepare:js && husky install",
+    "prepare": "npm run prepare:clean && npm run prepare:css && npm run prepare:js && husky install",
     "prepare:clean": "node .npm-prepare-clean.cjs",
+    "prepare:css": "sass --no-source-map src:. && postcss *.css -d .",
     "prepare:js": "babel src --out-dir . --ignore **/*.test.mjs,**/*.stories.mjs --keep-file-extension",
     "prepublishOnly": "npm run test",
     "prettier": "prettier --write . --ignore-path .gitignore",
@@ -47,11 +50,13 @@
   },
   "files": [
     "ExampleComponent.mjs",
-    "exampleFunction.mjs"
+    "exampleFunction.mjs",
+    "exampleStyles.css"
   ],
   "exports": {
     "./ExampleComponent.mjs": "./ExampleComponent.mjs",
     "./exampleFunction.mjs": "./exampleFunction.mjs",
+    "./exampleStyles.css": "./exampleStyles.css",
     "./package.json": "./package.json"
   },
   "dependencies": {
@@ -68,8 +73,10 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
+    "autoprefixer": "^10.4.14",
     "babel-jest": "^29.5.0",
     "babel-plugin-inline-react-svg": "^2.0.2",
+    "cssnano": "^6.0.0",
     "eslint": "^8.36.0",
     "eslint-plugin-jest": "^27.2.1",
     "eslint-plugin-react": "^7.32.2",
@@ -78,6 +85,9 @@
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
     "lint-staged": "^13.2.0",
-    "prettier": "^2.8.7"
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^2.8.7",
+    "sass": "^1.60.0"
   }
 }
