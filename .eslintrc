@@ -11,7 +11,7 @@
     "node": true,
     "es2021": true
   },
-  "extends": ["eslint:recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
   "overrides": [
     {
       "files": ["*.mjs"],
@@ -56,5 +56,10 @@
       }
     ],
     "simple-import-sort/exports": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
