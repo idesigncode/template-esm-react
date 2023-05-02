@@ -44,12 +44,17 @@ The GitHub action [npm-publish.yml](.github/workflows/npm-publish.yml) is used t
 <details>
   <summary>🧪 Testing</summary>
 
-The GitHub action [node.js.yml](.github/workflows/node.js.yml) is used to run the tests on pull requests and commit pushes into the main branch.
+The GitHub action [node.js.yml](.github/workflows/node.js.yml) is used to run the code linting tests on pull requests and commit pushes into the main branch.
 
 `npm run test` runs the code linting tests:
 
 - `npm run test:eslint` runs the [ESLint](https://github.com/eslint/eslint) JavaScript linting checks
 - `npm run test:prettier` runs the [Prettier](https://github.com/prettier/prettier) code formatting checks
+
+While running Storybook locally:
+
+- `npm run test:storybook` uses [Storybook Test Runner](https://storybook.js.org/docs/react/writing-tests/test-runner) to run [Test Coverage](https://storybook.js.org/docs/react/writing-tests/test-coverage), [User Interaction](https://storybook.js.org/docs/react/writing-tests/interaction-testing), [DOM](https://jestjs.io/docs/snapshot-testing) & [Image](https://github.com/americanexpress/jest-image-snapshot) Snapshot tests.
+- `npm run test:storybook:update` will update the [Test Coverage](https://storybook.js.org/docs/react/writing-tests/test-coverage) results and any failing [DOM](https://jestjs.io/docs/snapshot-testing) & [Image](https://github.com/americanexpress/jest-image-snapshot) Snapshot snapshots
 
 </details>
 
