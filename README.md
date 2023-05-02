@@ -27,6 +27,13 @@ _Note: the ["prepare" Life Cycle Script](https://docs.npmjs.com/cli/using-npm/sc
 </details>
 
 <details>
+  <summary>🚀 Deployments</summary>
+
+The GitHub action [npm-publish.yml](.github/workflows/npm-publish.yml) is used to automatically deploy a release to the NPM package registry. The action requires the `NPM_TOKEN` secrets to be set.
+
+</details>
+
+<details>
   <summary>📕 Storybook</summary>
 
 - `npm run storybook` will run Storybook for local use
