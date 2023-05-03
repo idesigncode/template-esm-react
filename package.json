@@ -1,7 +1,7 @@
 {
-  "name": "template-esm",
-  "version": "1.0.1",
-  "description": "Quickly setup ESM repositories with preconfigured functionality.",
+  "name": "template-esm-react",
+  "version": "0.0.0",
+  "description": "Quickly setup ESM React repositories with preconfigured functionality.",
   "keywords": [
     "babel",
     "eslint",
@@ -20,9 +20,9 @@
   ],
   "license": "MIT",
   "author": "Matthew Nuthall",
-  "repository": "github:idesigncode/template-esm",
-  "bugs": "https://github.com/idesigncode/template-esm/issues",
-  "homepage": "https://github.com/idesigncode/template-esm#readme",
+  "repository": "github:idesigncode/template-esm-react",
+  "bugs": "https://github.com/idesigncode/template-esm-react/issues",
+  "homepage": "https://github.com/idesigncode/template-esm-react#readme",
   "engines": {
     "node": ">= 18.0.0",
     "npm": ">= 9.0.0"

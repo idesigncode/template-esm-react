@@ -1,6 +1,6 @@
-# template-esm
+# template-esm-react
 
-Quickly setup ESM repositories with preconfigured functionality.
+Quickly setup ESM React repositories with preconfigured functionality.
 
 ## Installation
 
