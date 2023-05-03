@@ -47,7 +47,8 @@
     "storybook:build": "storybook build --quiet --docs",
     "test": "npm run test:prettier && npm run test:eslint",
     "test:eslint": "eslint . --ext .js,.cjs,.mjs --ignore-path .gitignore",
-    "test:prettier": "prettier --check . --ignore-path .gitignore"
+    "test:prettier": "prettier --check . --ignore-path .gitignore",
+    "test:storybook": "test-storybook --stories-json"
   },
   "files": [
     "ExampleComponent.mjs",
@@ -74,6 +75,7 @@
     "@storybook/addons": "^7.0.8",
     "@storybook/react": "^7.0.8",
     "@storybook/react-webpack5": "^7.0.8",
+    "@storybook/test-runner": "^0.10.0",
     "autoprefixer": "^10.4.14",
     "babel-plugin-inline-react-svg": "^2.0.2",
     "cssnano": "^6.0.1",
