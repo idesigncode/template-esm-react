@@ -13,4 +13,7 @@ npm-debug.log
 *.iml
 
 # Build files
+storybook-static/
 /exampleFunction.mjs
+/exampleStyles.css
+/ExampleComponent.mjs

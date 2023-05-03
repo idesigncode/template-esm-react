@@ -1,6 +1,6 @@
-# template-esm
+# template-esm-react
 
-Quickly setup ESM repositories with preconfigured functionality.
+Quickly setup ESM React repositories with preconfigured functionality.
 
 ## Installation
 
@@ -19,9 +19,18 @@ When adding source files, remember to add the build output file details to the `
 `npm run prepare` runs all preparation clean & build scripts:
 
 - `npm run prepare:clean` removes any files as specified in the `files` fields of [package.json](package.json)
+- `npm run prepare:css` compiles SCSS files from `src` into CSS files in the root directory with [PostCSS](https://github.com/postcss/postcss) & [Sass](https://github.com/sass/sass)
 - `npm run prepare:js` compiles JavaScript source files into the root directory files with [Babel](https://github.com/babel/babel)
 
 _Note: the ["prepare" Life Cycle Script](https://docs.npmjs.com/cli/using-npm/scripts) runs automatically during `publish`, `pack` and on local `install`._
+
+</details>
+
+<details>
+  <summary>Storybook</summary>
+
+- `npm run storybook` will run Storybook for local use
+- `npm run storybook:build` will build Storybook to `./storybook-static` for deployment use
 
 </details>
 

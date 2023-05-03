@@ -1,12 +1,16 @@
 {
-  "name": "template-esm",
-  "version": "1.0.1",
-  "description": "Quickly setup ESM repositories with preconfigured functionality.",
+  "name": "template-esm-react",
+  "version": "0.0.0",
+  "description": "Quickly setup ESM React repositories with preconfigured functionality.",
   "keywords": [
+    "react",
     "babel",
+    "postcss",
     "eslint",
     "jest",
+    "scss",
     "prettier",
+    "storybook",
     "cleanup",
     "esm",
     "husky",
@@ -20,9 +24,9 @@
   ],
   "license": "MIT",
   "author": "Matthew Nuthall",
-  "repository": "github:idesigncode/template-esm",
-  "bugs": "https://github.com/idesigncode/template-esm/issues",
-  "homepage": "https://github.com/idesigncode/template-esm#readme",
+  "repository": "github:idesigncode/template-esm-react",
+  "bugs": "https://github.com/idesigncode/template-esm-react/issues",
+  "homepage": "https://github.com/idesigncode/template-esm-react#readme",
   "engines": {
     "node": ">= 18.0.0",
     "npm": ">= 9.0.0"
@@ -34,34 +38,65 @@
   "scripts": {
     "eslint": "eslint . --ext .js,.cjs,.mjs --fix --ignore-path .gitignore",
     "postprepare": "node .npm-postprepare.cjs",
-    "prepare": "npm run prepare:clean && npm run prepare:js && husky install",
+    "prepare": "npm run prepare:clean && npm run prepare:css && npm run prepare:js && husky install",
     "prepare:clean": "node .npm-prepare-clean.cjs",
+    "prepare:css": "sass --no-source-map src:. && postcss *.css -d .",
     "prepare:js": "babel src --out-dir . --ignore **/*.test.mjs,**/*.stories.mjs --keep-file-extension",
     "prepublishOnly": "npm run test",
     "prettier": "prettier --write . --ignore-path .gitignore",
+    "storybook": "npm run prepare:css && storybook dev --ci -p 6006",
+    "storybook:build": "npm run prepare:css && storybook build --quiet --docs",
     "test": "npm run test:prettier && npm run test:eslint && npm run test:jest",
     "test:eslint": "eslint . --ext .js,.cjs,.mjs --ignore-path .gitignore",
     "test:jest": "NODE_OPTIONS=--experimental-vm-modules jest --config .jest-config.json",
     "test:prettier": "prettier --check . --ignore-path .gitignore"
   },
   "files": [
-    "exampleFunction.mjs"
+    "ExampleComponent.mjs",
+    "exampleFunction.mjs",
+    "exampleStyles.css"
   ],
   "exports": {
+    "./ExampleComponent.mjs": "./ExampleComponent.mjs",
     "./exampleFunction.mjs": "./exampleFunction.mjs",
+    "./exampleStyles.css": "./exampleStyles.css",
     "./package.json": "./package.json"
   },
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
   "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.3",
-    "@babel/preset-env": "^7.20.2",
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6",
     "@jest/globals": "^29.5.0",
-    "eslint": "^8.36.0",
+    "@storybook/addon-docs": "^7.0.8",
+    "@storybook/addons": "^7.0.8",
+    "@storybook/react": "^7.0.8",
+    "@storybook/react-webpack5": "^7.0.8",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "autoprefixer": "^10.4.14",
+    "babel-jest": "^29.5.0",
+    "babel-plugin-inline-react-svg": "^2.0.2",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.39.0",
     "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "husky": "^8.0.3",
     "jest": "^29.5.0",
-    "lint-staged": "^13.2.0",
-    "prettier": "^2.8.7"
+    "jest-environment-jsdom": "^29.5.0",
+    "lint-staged": "^13.2.2",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^2.8.8",
+    "sass": "^1.62.1",
+    "storybook": "^7.0.8",
+    "storybook-dark-mode": "^3.0.0"
   }
 }
