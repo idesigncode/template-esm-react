@@ -7,7 +7,6 @@
   ],
   "env": {
     "browser": true,
-    "jest": true,
     "node": true,
     "es2021": true
   },
@@ -30,7 +29,7 @@
   "parserOptions": {
     "ecmaVersion": "latest"
   },
-  "plugins": ["jest", "simple-import-sort"],
+  "plugins": ["simple-import-sort"],
   "rules": {
     "simple-import-sort/imports": [
       "error",

@@ -46,10 +46,9 @@ The GitHub action [npm-publish.yml](.github/workflows/npm-publish.yml) is used t
 
 The GitHub action [node.js.yml](.github/workflows/node.js.yml) is used to run the tests on pull requests and commit pushes into the main branch.
 
-`npm run test` runs all tests:
+`npm run test` runs the code linting tests:
 
 - `npm run test:eslint` runs the [ESLint](https://github.com/eslint/eslint) JavaScript linting checks
-- `npm run test:jest` runs the [Jest](https://github.com/facebook/jest) tests
 - `npm run test:prettier` runs the [Prettier](https://github.com/prettier/prettier) code formatting checks
 
 </details>
