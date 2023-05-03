@@ -1,5 +1,9 @@
 export default {
-  addons: ['@storybook/addon-docs', 'storybook-dark-mode'],
+  addons: [
+    '@storybook/addon-coverage',
+    '@storybook/addon-docs',
+    'storybook-dark-mode',
+  ],
   framework: {
     name: '@storybook/react-webpack5',
     options: {},
