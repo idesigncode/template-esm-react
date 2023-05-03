@@ -1,4 +1,4 @@
-# This workflow runs Storybook tests
+# This workflow runs Storybook CI tests against the Netlify build
 # ? Reference: https://github.com/storybookjs/test-runner#running-in-ci
 # ? Reference: https://github.com/marketplace/actions/wait-for-netlify-deployment
 
