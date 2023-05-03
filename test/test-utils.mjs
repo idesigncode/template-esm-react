@@ -1,8 +1,7 @@
 // ? Reference: https://testing-library.com/docs/react-testing-library/setup/
 
-import '@testing-library/jest-dom/extend-expect.js';
-
 import userEvent from '@testing-library/user-event';
+import '@testing-library/jest-dom/extend-expect.js';
 
 export * from '@testing-library/react';
 

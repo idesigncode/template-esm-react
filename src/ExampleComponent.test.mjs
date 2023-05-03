@@ -11,7 +11,6 @@ import {
   test,
 } from '@jest/globals';
 import React from 'react';
-
 import * as testUtils from '../test/test-utils.mjs';
 import ExampleComponent from './ExampleComponent.mjs';
 
