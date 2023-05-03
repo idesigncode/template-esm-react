@@ -15,6 +15,7 @@ npm-debug.log
 # Test generated files
 .nyc_output/
 coverage/
+__snapshots__/failed/
 
 # Build files
 storybook-static/
