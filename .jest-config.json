@@ -1,0 +1,9 @@
+{
+  "fakeTimers": {
+    "enableGlobally": true
+  },
+  "moduleFileExtensions": ["js", "json", "mjs"],
+  "modulePaths": ["<rootDir>/node_modules", "<rootDir>/src"],
+  "setupFilesAfterEnv": ["<rootDir>/test/setup.mjs"],
+  "testMatch": ["**/*.test.mjs"]
+}
