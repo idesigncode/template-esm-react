@@ -48,7 +48,8 @@
     "test": "npm run test:prettier && npm run test:eslint",
     "test:eslint": "eslint . --ext .js,.cjs,.mjs --ignore-path .gitignore",
     "test:prettier": "prettier --check . --ignore-path .gitignore",
-    "test:storybook": "test-storybook --stories-json --coverage"
+    "test:storybook": "test-storybook --stories-json --coverage",
+    "test:storybook:update": "npm run test:storybook -- --updateSnapshot"
   },
   "files": [
     "ExampleComponent.mjs",
