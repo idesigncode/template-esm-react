@@ -2,6 +2,7 @@ export default {
   addons: [
     '@storybook/addon-coverage',
     '@storybook/addon-docs',
+    '@storybook/addon-interactions',
     'storybook-dark-mode',
   ],
   framework: {

@@ -1,11 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ExampleComponent Example test 1`] = `
-<div class="Example"
-     data-testid="ExampleComponent"
+<input class="ExampleComponentWithProps"
+       data-testid="ExampleComponent"
 >
-  <p>
-    This is the contents of ExampleComponent
-  </p>
-</div>
 `;

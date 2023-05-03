@@ -4,10 +4,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const ExampleComponent = ({ className, ...props }) => {
-  return (
-    <div {...props} className={className} data-testid="ExampleComponent" />
-  );
+const ExampleComponent = (props) => {
+  return <input {...props} data-testid="ExampleComponent" />;
 };
 
 ExampleComponent.propTypes = {
