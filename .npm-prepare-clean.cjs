@@ -21,7 +21,7 @@ async function removeBuildFiles(filepath) {
 
 (async function () {
   try {
-    await Promise.all(files.map(removeBuildFiles));
+    await Promise.all([...files, 'storybook-static'].map(removeBuildFiles));
   } catch (error) {
     console.error(error);
   }

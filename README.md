@@ -14,7 +14,7 @@ Remove/replace the example source files in the `src` directory with your own.
 When adding source files, remember to add the build output file details to the `files` & `exports` fields of [package.json](package.json) and [.gitignore](.gitignore).
 
 <details>
-  <summary>Build</summary>
+  <summary>🛠️ Build</summary>
 
 `npm run prepare` runs all preparation clean & build scripts:
 
@@ -27,7 +27,14 @@ _Note: the ["prepare" Life Cycle Script](https://docs.npmjs.com/cli/using-npm/sc
 </details>
 
 <details>
-  <summary>Storybook</summary>
+  <summary>🚀 Deployments</summary>
+
+The GitHub action [npm-publish.yml](.github/workflows/npm-publish.yml) is used to automatically deploy a release to the NPM package registry. The action requires the `NPM_TOKEN` secrets to be set.
+
+</details>
+
+<details>
+  <summary>📕 Storybook</summary>
 
 - `npm run storybook` will run Storybook for local use
 - `npm run storybook:build` will build Storybook to `./storybook-static` for deployment use
@@ -35,7 +42,7 @@ _Note: the ["prepare" Life Cycle Script](https://docs.npmjs.com/cli/using-npm/sc
 </details>
 
 <details>
-  <summary>Testing</summary>
+  <summary>🧪 Testing</summary>
 
 The GitHub action [node.js.yml](.github/workflows/node.js.yml) is used to run the tests on pull requests and commit pushes into the main branch.
 
@@ -48,7 +55,7 @@ The GitHub action [node.js.yml](.github/workflows/node.js.yml) is used to run th
 </details>
 
 <details>
-  <summary>Code linting</summary>
+  <summary>🕵️ Code linting</summary>
 
 [Husky](https://github.com/typicode/husky) & [lint-staged](https://github.com/okonet/lint-staged) are used to automatically run code linting checks on each file of a commit.
 
