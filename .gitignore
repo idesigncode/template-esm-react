@@ -12,6 +12,11 @@ npm-debug.log
 .idea/
 *.iml
 
+# Test generated files
+.nyc_output/
+coverage/
+__snapshots__/failed/
+
 # Build files
 storybook-static/
 /exampleFunction.mjs
