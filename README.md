@@ -27,6 +27,14 @@ _Note: the ["prepare" Life Cycle Script](https://docs.npmjs.com/cli/using-npm/sc
 </details>
 
 <details>
+  <summary>Storybook</summary>
+
+- `npm run storybook` will run Storybook for local use
+- `npm run storybook:build` will build Storybook to `./storybook-static` for deployment use
+
+</details>
+
+<details>
   <summary>Testing</summary>
 
 The GitHub action [node.js.yml](.github/workflows/node.js.yml) is used to run the tests on pull requests and commit pushes into the main branch.
