@@ -7,6 +7,8 @@
     "babel",
     "postcss",
     "eslint",
+    "coverage-report",
+    "snapshot-testing",
     "scss",
     "prettier",
     "storybook",
@@ -19,6 +21,7 @@
     "mjs",
     "nvmrc",
     "npm-init",
+    "interaction-testing",
     "postprepare"
   ],
   "license": "MIT",
