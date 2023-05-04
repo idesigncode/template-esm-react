@@ -1,8 +1,8 @@
 /**
  * TODO - delete once src files setup
  */
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const ExampleComponent = (props) => {
   return <input {...props} data-testid="ExampleComponent" />;
