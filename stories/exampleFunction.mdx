@@ -1,4 +1,4 @@
-import { Meta, Source, Story } from '@storybook/addon-docs';
+import { Meta, Story } from '@storybook/addon-docs';
 import * as exampleFunctionStories from './exampleFunction.stories.mjs';
 
 <Meta of={exampleFunctionStories} />
@@ -13,6 +13,4 @@ Description of the example function.
 
 ### Implementation:
 
-<Source
-  code={`exampleFunction('${exampleFunctionStories.Example.args.arg}')`}
-/>
+<Story of={exampleFunctionStories.Implementation} />
