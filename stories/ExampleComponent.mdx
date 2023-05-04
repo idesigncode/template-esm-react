@@ -1,6 +1,5 @@
-import { Meta, Source, Story } from '@storybook/addon-docs';
+import { Meta, Story } from '@storybook/addon-docs';
 import * as ExampleComponentStories from './ExampleComponent.stories.mjs';
-import ExampleComponentWithPropsRaw from './ExampleComponentWithProps.mjs?raw';
 
 <Meta of={ExampleComponentStories} />
 
@@ -14,4 +13,4 @@ Description of the example component.
 
 ### Implementation:
 
-<Source code={ExampleComponentWithPropsRaw} />
+<Story of={ExampleComponentStories.Implementation} />

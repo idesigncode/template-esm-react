@@ -1,7 +1,10 @@
+import React from 'react';
+import Source from '@idesigncode/storybook-tools/Source.mjs';
 import { expect } from '@storybook/jest';
 import { userEvent, within } from '@storybook/testing-library';
 import ExampleComponent from '../src/ExampleComponent.mjs';
 import ExampleComponentWithProps from './ExampleComponentWithProps.mjs';
+import ExampleComponentWithPropsRaw from './ExampleComponentWithProps.mjs?raw';
 
 export default {
   title: 'ExampleComponent',
@@ -19,4 +22,8 @@ export const Example = {
       expect(input).toHaveValue('test');
     });
   },
+};
+
+export const Implementation = {
+  render: () => <Source code={ExampleComponentWithPropsRaw} />,
 };

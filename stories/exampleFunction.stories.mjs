@@ -1,3 +1,4 @@
+import Source from '@idesigncode/storybook-tools/Source.mjs';
 import { expect } from '@storybook/jest';
 import exampleFunction from '../src/exampleFunction.mjs';
 
@@ -16,4 +17,11 @@ export const Example = {
       expect(canvasElement).toHaveTextContent(args.arg);
     });
   },
+};
+
+export const Implementation = {
+  args: {
+    code: `exampleFunction('${Example.args.arg}')`,
+  },
+  render: Source,
 };
