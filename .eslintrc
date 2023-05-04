@@ -37,6 +37,8 @@
         // ? Reference: https://github.com/lydell/eslint-plugin-simple-import-sort/issues/25#issuecomment-625397779
         "groups": [
           [
+            // React related packages
+            "^react",
             // Packages
             "^@?\\w",
             // Side effect imports
