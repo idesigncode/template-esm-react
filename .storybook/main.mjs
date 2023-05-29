@@ -1,3 +1,5 @@
+import * as packageJson from '../package.json';
+
 export default {
   addons: [
     {
@@ -15,6 +17,14 @@ export default {
   docs: {
     autodocs: 'tag',
   },
+  env: (config) => ({
+    ...config,
+    IMPORT_PATH_REPLACEMENTS: JSON.stringify({
+      '../': '', // ? Remove "parent directory" relative path segments
+      './': '', // ? Remove "current directory" relative path segments
+      'src/': `${packageJson.name}/`, // ? Prepend package name
+    }),
+  }),
   framework: {
     name: '@storybook/react-webpack5',
     options: {},
