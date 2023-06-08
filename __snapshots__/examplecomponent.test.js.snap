@@ -212,7 +212,7 @@ exports[`ExampleComponent Implementation test 1`] = `
       <span class>
       </span>
       <span class="token string">
-        "template-esm-react/src/ExampleComponent.mjs"
+        "template-esm-react/ExampleComponent.mjs"
       </span>
       <span class="token punctuation">
         ;
