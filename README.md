@@ -9,7 +9,7 @@ Quickly setup ESM React repositories with preconfigured functionality.
 
 ## Usage
 
-Remove/replace the example source files in the `src` directory with your own.
+Remove/replace the sample source files in `src` & `stories` with your own.
 
 When adding source files, remember to add the build output file details to the `files` & `exports` fields of [package.json](package.json) and [.gitignore](.gitignore).
 

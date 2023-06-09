@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ExampleComponent Example test 1`] = `
+exports[`SampleComponent Example test 1`] = `
 <div class="example sb-unstyled">
-  <input class="ExampleComponent"
-         data-testid="ExampleComponent"
+  <input class="SampleComponent"
+         data-testid="SampleComponent"
          value="test"
   >
 </div>
@@ -42,7 +42,7 @@ exports[`ExampleComponent Example test 1`] = `
                     style="white-space: pre;"
               >
                 <span class="token string">
-                  "ExampleComponent"
+                  "SampleComponent"
                 </span>
               </code>
             </pre>
@@ -173,7 +173,7 @@ exports[`ExampleComponent Example test 1`] = `
 </div>
 `;
 
-exports[`ExampleComponent Implementation test 1`] = `
+exports[`SampleComponent Implementation test 1`] = `
 <div class="Source sb-unstyled ">
   <pre class="prismjs">
     <code class="language-jsx"
@@ -204,7 +204,7 @@ exports[`ExampleComponent Implementation test 1`] = `
         import
       </span>
       <span class>
-        ExampleComponent
+        SampleComponent
       </span>
       <span class="token keyword">
         from
@@ -212,7 +212,7 @@ exports[`ExampleComponent Implementation test 1`] = `
       <span class>
       </span>
       <span class="token string">
-        "template-esm-react/ExampleComponent.mjs"
+        "template-esm-react/SampleComponent.mjs"
       </span>
       <span class="token punctuation">
         ;
@@ -227,7 +227,7 @@ exports[`ExampleComponent Implementation test 1`] = `
       <span class>
       </span>
       <span class="token function-variable function">
-        ExampleComponentExample
+        SampleComponentExample
       </span>
       <span class>
       </span>
@@ -322,7 +322,7 @@ exports[`ExampleComponent Implementation test 1`] = `
         &lt;
       </span>
       <span class="token tag class-name">
-        ExampleComponent
+        SampleComponent
       </span>
       <span class="token tag">
       </span>
@@ -394,7 +394,7 @@ exports[`ExampleComponent Implementation test 1`] = `
         "
       </span>
       <span class="token tag attr-value">
-        ExampleComponent
+        SampleComponent
       </span>
       <span class="token tag attr-value punctuation">
         "
@@ -458,7 +458,7 @@ exports[`ExampleComponent Implementation test 1`] = `
         default
       </span>
       <span class>
-        ExampleComponentExample
+        SampleComponentExample
       </span>
       <span class="token punctuation">
         ;
