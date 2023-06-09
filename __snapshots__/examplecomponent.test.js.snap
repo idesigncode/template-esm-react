@@ -2,7 +2,7 @@
 
 exports[`ExampleComponent Example test 1`] = `
 <div class="example sb-unstyled">
-  <input class="ExampleComponentWithProps"
+  <input class="ExampleComponent"
          data-testid="ExampleComponent"
          value="test"
   >
@@ -42,7 +42,7 @@ exports[`ExampleComponent Example test 1`] = `
                     style="white-space: pre;"
               >
                 <span class="token string">
-                  "ExampleComponentWithProps"
+                  "ExampleComponent"
                 </span>
               </code>
             </pre>
@@ -227,7 +227,7 @@ exports[`ExampleComponent Implementation test 1`] = `
       <span class>
       </span>
       <span class="token function-variable function">
-        ExampleComponentWithProps
+        ExampleComponentExample
       </span>
       <span class>
       </span>
@@ -394,7 +394,7 @@ exports[`ExampleComponent Implementation test 1`] = `
         "
       </span>
       <span class="token tag attr-value">
-        ExampleComponentWithProps
+        ExampleComponent
       </span>
       <span class="token tag attr-value punctuation">
         "
@@ -458,7 +458,7 @@ exports[`ExampleComponent Implementation test 1`] = `
         default
       </span>
       <span class>
-        ExampleComponentWithProps
+        ExampleComponentExample
       </span>
       <span class="token punctuation">
         ;

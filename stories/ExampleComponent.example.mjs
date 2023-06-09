@@ -2,18 +2,18 @@ import React from 'react';
 import PropsTable from '@idesigncode/storybook-tools/PropsTable.mjs';
 import ExampleComponent from '../src/ExampleComponent.mjs';
 
-const ExampleComponentWithProps = () => {
+const ExampleComponentExample = () => {
   const [value, setValue] = React.useState('');
 
   return (
     <PropsTable>
       <ExampleComponent
         onChange={(event) => setValue(event.target.value)}
-        className="ExampleComponentWithProps"
+        className="ExampleComponent"
         value={value}
       />
     </PropsTable>
   );
 };
 
-export default ExampleComponentWithProps;
+export default ExampleComponentExample;
