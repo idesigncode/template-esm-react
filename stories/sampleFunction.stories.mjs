@@ -1,17 +1,17 @@
 import Source from '@idesigncode/storybook-tools/Source.mjs';
-import { expect } from '@storybook/jest';
-import exampleFunction from '../src/exampleFunction.mjs';
+import sampleFunction from '../src/sampleFunction.mjs';
+import { expect } from '../test/test-utils.mjs';
 
 export default {
-  title: 'exampleFunction',
-  component: exampleFunction,
+  title: 'sampleFunction',
+  component: sampleFunction,
 };
 
 export const Example = {
   args: {
-    arg: 'This is the argument given to exampleFunction',
+    arg: 'This is the argument given to sampleFunction',
   },
-  render: (args) => exampleFunction(args.arg),
+  render: (args) => sampleFunction(args.arg),
   play: async ({ args, canvasElement, step }) => {
     await step(`Outputs the given argument`, async () => {
       expect(canvasElement).toHaveTextContent(args.arg);
@@ -21,7 +21,7 @@ export const Example = {
 
 export const Implementation = {
   args: {
-    code: `exampleFunction('${Example.args.arg}')`,
+    code: `sampleFunction('${Example.args.arg}')`,
   },
   render: Source,
 };
