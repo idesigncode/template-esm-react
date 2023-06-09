@@ -7,7 +7,7 @@ export default {
       name: '@storybook/addon-coverage',
       options: {
         istanbul: {
-          include: ['**/src/**'],
+          include: ['**/src/**'], // Prevent coverage code injection in PropsTable values
         },
       },
     },
@@ -33,7 +33,7 @@ export default {
   },
   stories: ['../**/*.mdx', '../**/*.stories.*'],
   storyIndexers: (indexers) => {
-    // ? Extend js story indexer for mjs
+    // Extend js story indexer for mjs
     return indexers.map((indexer) => {
       if (`${indexer.test}`.includes(`[tj]sx?$`)) {
         return {
