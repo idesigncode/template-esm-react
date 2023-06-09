@@ -1,6 +1,6 @@
 {
   "name": "template-esm-react",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Quickly setup ESM React repositories with preconfigured functionality.",
   "keywords": [
     "react",
@@ -47,6 +47,7 @@
     "prettier": "prettier --write . --ignore-path .gitignore",
     "storybook": "storybook dev --ci -p 6006",
     "storybook:build": "storybook build --quiet --docs",
+    "storybook:start": "npx http-server ./storybook-static -p 6006",
     "test": "npm run test:prettier && npm run test:eslint",
     "test:eslint": "eslint . --ext .js,.cjs,.mjs --ignore-path .gitignore",
     "test:prettier": "prettier --check . --ignore-path .gitignore",
