@@ -1,4 +1,3 @@
-import React from 'react';
 import Source from '@idesigncode/storybook-tools/Source.mjs';
 import { expect } from '@storybook/jest';
 import { userEvent, within } from '@storybook/testing-library';
@@ -12,7 +11,6 @@ export default {
 };
 
 export const Example = {
-  render: ExampleComponentExample,
   play: async ({ canvasElement, step }) => {
     const input = within(canvasElement).getByTestId('ExampleComponent');
 
@@ -22,8 +20,12 @@ export const Example = {
       expect(input).toHaveValue('test');
     });
   },
+  render: ExampleComponentExample,
 };
 
 export const Implementation = {
-  render: () => <Source code={ExampleComponentExampleRaw} />,
+  args: {
+    code: ExampleComponentExampleRaw,
+  },
+  render: Source,
 };
