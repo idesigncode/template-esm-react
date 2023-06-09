@@ -1,7 +1,6 @@
 import Source from '@idesigncode/storybook-tools/Source.mjs';
-import { expect } from '@storybook/jest';
-import { userEvent, within } from '@storybook/testing-library';
 import ExampleComponent from '../src/ExampleComponent.mjs';
+import { expect, userEvent, within } from '../test/test-utils.mjs';
 import ExampleComponentExample from './ExampleComponent.example.mjs';
 import ExampleComponentExampleRaw from './ExampleComponent.example.mjs?raw';
 

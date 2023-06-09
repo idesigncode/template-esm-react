@@ -1,6 +1,6 @@
 import Source from '@idesigncode/storybook-tools/Source.mjs';
-import { expect } from '@storybook/jest';
 import exampleFunction from '../src/exampleFunction.mjs';
+import { expect } from '../test/test-utils.mjs';
 
 export default {
   title: 'exampleFunction',
