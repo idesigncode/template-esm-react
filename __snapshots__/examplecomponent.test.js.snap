@@ -7,7 +7,7 @@ exports[`ExampleComponent Example test 1`] = `
          value="test"
   >
 </div>
-<div class="propsTable sb-anchor">
+<div class="propsTable sb-unstyled">
   <table aria-hidden="false">
     <thead>
       <tr>
@@ -212,7 +212,7 @@ exports[`ExampleComponent Implementation test 1`] = `
       <span class>
       </span>
       <span class="token string">
-        "template-esm-react/src/ExampleComponent.mjs"
+        "template-esm-react/ExampleComponent.mjs"
       </span>
       <span class="token punctuation">
         ;
