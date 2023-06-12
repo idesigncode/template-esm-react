@@ -46,7 +46,7 @@ The GitHub action [npm-publish.yml](.github/workflows/npm-publish.yml) is used t
 
 #### Code linting tests
 
-The GitHub action [node.js.yml](.github/workflows/node.js.yml) is used to run the code linting tests on pull requests and commit pushes into the main branch.
+The GitHub action [node.js.yml](.github/workflows/node.js.yml) is used to run the code linting tests on pull requests and commit pushes into the main branch. The action requires the `NPM_TOKEN` secrets to be set.
 
 `npm run test` runs the code linting tests:
 
