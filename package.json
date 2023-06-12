@@ -1,6 +1,6 @@
 {
   "name": "template-esm-react",
-  "version": "3.0.4",
+  "version": "3.0.6",
   "description": "Quickly setup ESM React repositories with preconfigured functionality.",
   "keywords": [
     "react",
@@ -55,15 +55,15 @@
     "test:storybook:update": "npm run test:storybook -- --updateSnapshot"
   },
   "files": [
-    "ExampleComponent.mjs",
-    "exampleFunction.mjs",
-    "exampleStyles.css"
+    "SampleComponent.mjs",
+    "sampleFunction.mjs",
+    "sampleStyles.css"
   ],
   "exports": {
-    "./ExampleComponent.mjs": "./ExampleComponent.mjs",
-    "./exampleFunction.mjs": "./exampleFunction.mjs",
-    "./exampleStyles.css": "./exampleStyles.css",
-    "./package.json": "./package.json"
+    "./SampleComponent.mjs": "./SampleComponent.mjs",
+    "./package.json": "./package.json",
+    "./sampleFunction.mjs": "./sampleFunction.mjs",
+    "./sampleStyles.css": "./sampleStyles.css"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
