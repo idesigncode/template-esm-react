@@ -1,6 +1,6 @@
 {
   "name": "template-esm-react",
-  "version": "3.0.4",
+  "version": "3.0.6",
   "description": "Quickly setup ESM React repositories with preconfigured functionality.",
   "keywords": [
     "react",
@@ -55,15 +55,15 @@
     "test:storybook:update": "npm run test:storybook -- --updateSnapshot"
   },
   "files": [
-    "ExampleComponent.mjs",
-    "exampleFunction.mjs",
-    "exampleStyles.css"
+    "SampleComponent.mjs",
+    "sampleFunction.mjs",
+    "sampleStyles.css"
   ],
   "exports": {
-    "./ExampleComponent.mjs": "./ExampleComponent.mjs",
-    "./exampleFunction.mjs": "./exampleFunction.mjs",
-    "./exampleStyles.css": "./exampleStyles.css",
-    "./package.json": "./package.json"
+    "./SampleComponent.mjs": "./SampleComponent.mjs",
+    "./package.json": "./package.json",
+    "./sampleFunction.mjs": "./sampleFunction.mjs",
+    "./sampleStyles.css": "./sampleStyles.css"
   },
   "dependencies": {
     "prop-types": "^15.8.1",
@@ -75,7 +75,7 @@
     "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
     "@babel/preset-react": "^7.22.5",
-    "@idesigncode/storybook-tools": "^2.1.1",
+    "@idesigncode/storybook-tools": "^2.1.2",
     "@storybook/addon-coverage": "^0.0.8",
     "@storybook/addon-docs": "^7.0.20",
     "@storybook/addon-interactions": "^7.0.20",
