@@ -59,6 +59,7 @@ The GitHub action [storybook-tests.yml](.github/workflows/storybook-tests.yml) i
 
 - `NETLIFY_SITE_ID`
 - `NETLIFY_TOKEN`
+- `NPM_TOKEN`
 
 These Storybook CI tests can also be run while running Storybook locally:
 
