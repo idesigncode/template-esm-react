@@ -38,7 +38,7 @@ function requiredPrompt(message) {
 
 // Use scope option (if given)
 const [scopeArg = ''] = process.argv.filter((arg) =>
-  arg.startsWith('--scope=')
+  arg.startsWith('--scope='),
 );
 const scope = scopeArg.replace('--scope=', '');
 // Use basename global as name
@@ -56,7 +56,7 @@ module.exports = {
     'GitHub repository keywords',
     '',
     // Split keywordString on spaces or commas
-    (keywordString) => keywordString.split(/[\s,]+/g)
+    (keywordString) => keywordString.split(/[\s,]+/g),
   ),
   license: optionalPrompt('License', package?.license),
   author: optionalPrompt('Author', package?.author?.name),

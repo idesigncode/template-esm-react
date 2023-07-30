@@ -49,7 +49,7 @@ function sortObjectByKey(object, order) {
             }
             return order.indexOf(accumulator) - order.indexOf(key);
           }
-        : undefined
+        : undefined,
     )
     .reduce((accumulator, key) => {
       return { ...accumulator, [key]: object[key] };
@@ -135,7 +135,7 @@ function logFileUpdate(filename) {
     const readmeUpdated = updateReadme(
       pkgUpdated.description,
       pkgUpdated.name,
-      readme
+      readme,
     );
     if (readmeUpdated !== readme) {
       await fsPromises.writeFile(README_PATH, readmeUpdated);
