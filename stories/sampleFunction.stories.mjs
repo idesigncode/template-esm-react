@@ -1,3 +1,4 @@
+import React from 'react';
 import Source from '@idesigncode/storybook-tools/Source.mjs';
 import sampleFunction from '../src/sampleFunction.mjs';
 import { expect } from '../test/test-utils.mjs';
@@ -23,5 +24,5 @@ export const Implementation = {
   args: {
     code: `sampleFunction('${Example.args.arg}')`,
   },
-  render: Source,
+  render: (args) => <Source {...args} />,
 };
