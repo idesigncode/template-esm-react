@@ -15,10 +15,13 @@ exports[`sampleFunction Implementation test 1`] = `
         (
       </span>
       <span class="token string">
-        'This is the argument given to sampleFunction'
+        "This is the argument given to sampleFunction"
       </span>
       <span class="token punctuation">
         )
+      </span>
+      <span class="token punctuation">
+        ;
       </span>
     </code>
   </pre>

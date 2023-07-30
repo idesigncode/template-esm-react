@@ -122,17 +122,12 @@ exports[`SampleComponent Example test 1`] = `
                 <span class="token punctuation">
                   )
                 </span>
-                <span class="token punctuation">
-                  ;
-                </span>
                 <span class>
                 </span>
                 <span class>
                 </span>
                 <span class="token punctuation">
                   }
-                </span>
-                <span class>
                 </span>
               </code>
             </pre>
@@ -462,8 +457,6 @@ exports[`SampleComponent Implementation test 1`] = `
       </span>
       <span class="token punctuation">
         ;
-      </span>
-      <span class>
       </span>
     </code>
   </pre>

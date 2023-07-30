@@ -1,3 +1,4 @@
+import React from 'react';
 import Source from '@idesigncode/storybook-tools/Source.mjs';
 import { expect, userEvent, within } from '../test/test-utils.mjs';
 import SampleComponentExample from './SampleComponent.example.mjs';
@@ -24,5 +25,5 @@ export const Implementation = {
   args: {
     code: SampleComponentExampleRaw,
   },
-  render: Source,
+  render: (args) => <Source {...args} />,
 };
