@@ -1,6 +1,6 @@
 {
   "name": "template-esm-react",
-  "version": "3.0.7",
+  "version": "3.0.8",
   "description": "Quickly setup ESM React repositories with preconfigured functionality.",
   "keywords": [
     "react",
