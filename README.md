@@ -29,7 +29,7 @@ _Note: the ["prepare" Life Cycle Script](https://docs.npmjs.com/cli/using-npm/sc
 <details>
   <summary>🚀 Deployments</summary>
 
-The GitHub action [npm-publish.yml](.github/workflows/npm-publish.yml) is used to automatically deploy a release to the NPM package registry. The action requires the `NPM_TOKEN` secrets to be set.
+The GitHub action [release.yml](.github/workflows/release.yml) is used to automatically deploy a release to the NPM package registry. The action requires the `NPM_TOKEN` secrets to be set.
 
 </details>
 
@@ -46,7 +46,7 @@ The GitHub action [npm-publish.yml](.github/workflows/npm-publish.yml) is used t
 
 #### Code linting tests
 
-The GitHub action [node.js.yml](.github/workflows/node.js.yml) is used to run the code linting tests on pull requests and commit pushes into the main branch. The action requires the `NPM_TOKEN` secrets to be set.
+The GitHub action [node-tests.yml](.github/workflows/node-tests.yml) is used to run the code linting tests on pull requests and commit pushes into the main branch. The action requires the `NPM_TOKEN` secrets to be set.
 
 `npm run test` runs the code linting tests:
 
